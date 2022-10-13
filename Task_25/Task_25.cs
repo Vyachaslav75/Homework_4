@@ -14,4 +14,9 @@
 Console.Clear();
 int A = enterNumber("Введите число А:  ", "Введите целое число");
 int B = enterNumber("Введите число В:  ", "Введите целое число");
-Console.WriteLine($"{A}, {B} -> {Math.Pow(A, B)}");
+int us_pow=1;
+for (int i = 0; i < B; i++)
+{
+    us_pow*=A;
+}
+Console.WriteLine($"{A}, {B} -> {us_pow}");
